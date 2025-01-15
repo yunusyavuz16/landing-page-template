@@ -23,27 +23,40 @@ const HeroWithWaveMotion = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-r from-blue-500 to-blue-500 h-screen flex items-center justify-center text-center text-white">
-      <div className="container mx-auto px-6">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          Welcome to Our Company
-        </h1>
-        <p className="mt-4 text-lg md:text-xl">
-          Elevating businesses with innovative solutions and unmatched services.
-        </p>
-        <div className="mt-6 md:space-x-4 flex flex-col md:flex-row items-center justify-center">
-          <a
-            href="#services"
-            className="px-6 py-3 bg-white text-blue-600 font-bold rounded-full shadow-md hover:bg-gray-200 transition"
-          >
-            Explore Services
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 mt-3 md:mt-0 bg-blue-600 border border-white font-bold rounded-full shadow-md hover:bg-blue-700 transition"
-          >
-            Get in Touch
-          </a>
+    <section className="relative bg-gradient-to-r from-blue-500 to-blue-600 h-screen flex items-center justify-center text-white">
+      <div className="container mx-auto px-6 max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center justify-between gap-8">
+        {/* Left Side */}
+        <div>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            Welcome to Our Company
+          </h1>
+          <p className="mt-4 text-lg md:text-xl">
+            Elevating businesses with innovative solutions and unmatched
+            services.
+          </p>
+          <div className="mt-6 flex flex-col md:flex-row items-center md:space-x-4">
+            <a
+              href="#services"
+              className="px-6 py-3 bg-white text-blue-600 font-bold rounded-full shadow-md hover:bg-gray-200 transition"
+            >
+              Explore Services
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 mt-3 md:mt-0 bg-blue-600 border border-white font-bold rounded-full shadow-md hover:bg-blue-700 transition"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="flex justify-end items-end">
+          <img
+            src="/hero-image.png" // Replace with the actual image path
+            alt="Hero Illustration"
+            className="w-full max-w-md md:max-w-lg"
+          />
         </div>
       </div>
 
